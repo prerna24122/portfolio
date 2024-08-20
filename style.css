@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: black;
+}
+#div{
+
+   width: 100%;
+    height: 600px;
+    
+}
+.img1{
+    height: 276px;
+    width: 300px;
+    padding-left: 40px;
+    border-radius: 30px;
+    margin-top: 140px;
+
+}
+
+ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+ li  a {
+    font-size: 25px;
+    color: red;
+    text-decoration: none;
+    position: relative;
+  
+    
+}
+
+ul {
+    background-color: black; 
+    
+}
+li>a::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: yellow;
+    position: absolute;
+    bottom: -6px;
+    left: 0px;
+
+
+}
+li>a:hover{
+    background-color: white;
+}
+.div2{
+
+    height: 300px;
+    width: 830px;
+    position: absolute;
+    top: 200px;
+    left: 560px;
+}
+p{
+    font-size: 36px;
+    font-weight: bold;
+   margin-left: 290px;
+   color: white;
+}
+h1 span{
+    color: red;
+}
+h1{
+    margin-left: 5px;
+    color: white;
+}
+.div3{
+  
+    height: 550px;
+    width: 100%;
+    margin-top: 110px;
+}
+.left{
+ 
+    height: 500px;
+    width: 40%;
+    float: left;
+   
+}
+.right{
+    
+    height: 500px;
+    width: 45%;
+    float: right;
+    margin-right:10% ;
+   
+}
+.left img{
+    width: 50%;
+    height: 320px;
+    border-radius: 15px;
+    margin-left: 25px;
+}
+.right h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+}
+.right p{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.div4{
+   
+    display: flex;
+    margin: 20px 2px 
+
+}
+.p1{
+    margin-right: 30px;
+   padding: 2px;
+    position: relative;
+
+}
+.p1::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+
+}
+.p1.active_link:after{
+    width: 50%;
+}
+ 
+
+.div5 ol li{
+   
+    color: white;
+    margin-left: 30px;
+ }
+ .div5{
+    display: none;
+ }
+ .div5.active_tab{
+    display: block;
+ }
+.container h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+   margin-left: 600px;
+}
+#projects{
+    padding: 50px 0;
+}
+
+.work_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    padding-left: 30px;
+}
+.layer p{
+    font-size: 20px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+ .work img{
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    transition: transform 0.5s;
+
+ }
+ .work:hover img{
+    transform: scale(1.1);
+ }
+ .icons p{
+    font-size: 20px;
+    margin-left: 30px;
+ }
+ .contact_left{
+    margin-top: 400px;
+ }
+ 

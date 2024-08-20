@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6873079fa3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="div">
+            <center>  
+            <ul> 
+                <li><a href="#div">HOME</a></li>
+                <li><a href="#About">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+             </ul>
+           </center>
+        <img src="./photo.png" class="img1">
+        <div class="div2">
+            <h1>Hello, I am <span>Prerna Singh </span> From <span>Pillai College of engineering.</span></h1>
+             <br><p>web-developer!</p>
+              </div>
+            </div>
+
+
+           
+
+
+
+
+
+
+            <!--About-->
+           <div id="About">
+           <div class="div3">
+            <div class="left">
+                <img src="./image2.jpeg">
+
+            </div>
+            <div class="right">
+                <h1>About Me</h1>
+                <p>Hello I'm Prerna Singh,highly motivated Third-year engineering student with a strong foundation in Electronics and Computer Science engineering in Pillai College Of Engineering.I am eager to contribute my developer skills and eagerness to learn to a team environment while learning from experienced professionals. I had done my  Web Development internship in Octanet It company and i was also  a Robotic intern at Pilllai College Of engineering in Second year of engineering.</p>
+                <div class="div4">
+                    <p class="p1 active_link" onclick="opentab('skills')">Skills</p>
+                    <p class="p1" onclick="opentab('education')">Education</p>
+                    <p class="p1" onclick="opentab('hobbies')">Hobbies</p>
+
+                </div>
+               <div class="div5 active_tab" id="skills">
+                <ol>
+                    <li>HTml</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Jquery</li>
+                    <li>ReactJs</li>
+                    <li>Microsoft Excel</li>
+                    <li>Analytical Skills</li>
+                    <li>Overleaf</li>
+
+                </ol>
+
+               </div>
+              <div class="div5" id="education">
+                <ol>
+                    <li><span>Dec2007-Jun2022</span><br>Apeejay School, kharghar</li>
+                    <li><span>Nov2022-Apr2026</span><br>Pillai College Of engineering</li>
+                 </ol>
+
+               </div>
+               <div class="div5" id="hobbies">
+                <p>More thing I like !</p>
+                <ol>
+                    <li>Listening To Music</li>
+                    <li>To Dance</li>
+                    <li>To Sketch</li>
+                    <li>Reading Books</li>
+                </ol>
+
+               </div>
+
+            </div>
+
+           </div>
+           
+            <!--Projects-->
+            <div id="projects">
+                <div class="container">
+                    <h1>My projects</h1>
+                    <div class="work_list">
+                        <div class="work">
+                            <img src="todolist.png" style="width: 300px; height: 300px;">
+                            <div class="layer">
+                            <p>To-do-list</p>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="onlineS.png" style="width: 300px; height: 300px;" >
+                            <div class="layer">
+                                <p>Online shopping (front page)</p>
+                                </div>
+                        </div>
+                        <div class="work">
+                            <img src="rmaze.jpeg" style="width: 300px; height: 300px;" >
+                            <div class="layer">
+                                <p>Maze solving using firebird-v</p>
+                                </div>
+                        </div>
+                        <div class="work">
+                            <img src="landing.png" style="width: 300px; height: 300px;" >
+                            <div class="layer">
+                                <p>Landing Page</p>
+                                </div>
+                        </div>
+                        
+                </div>
+
+            </div>
+
+
+            <!--Contact-->
+            <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact_left">
+                        <h1>Contact me</h1>
+                        <div class="icons">
+                            <p>9004347738</p>
+                            <p>prerna.singh2404@gmail.com</p>
+                            <a href="https://www.linkedin.com/in/prerna-singh-608bab2a9"> <i class="fa-brands fa-linkedin" ></i></a>
+                            <a href="https://github.com/prerna24122"> <i class="fa-brands fa-github"></i></a>
+
+                        </div>
+
+                    </div>
+                    <div class="contact_right">
+                        <input type="text" name="Nmae" placeholder="your name">
+
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+
+           <script>
+            var tablinks=document.getElementsByClassName("p1");
+            var tabcontents=document.getElementsByClassName("div5");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active_link")
+                }
+                
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active_tab");
+                }
+                event.currentTarget.classList.add("active_link");
+                document.getElementById(tabname).classList.add("active_tab");
+
+            }
+            
+           </script>
+
+
+
+
+
+
+            
+        
+    </body>
+</html>
